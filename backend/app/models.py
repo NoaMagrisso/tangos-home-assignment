@@ -21,3 +21,5 @@ class Entity(BaseModel):
     list_date: date
     remarks: str | None
     relations: list[Relation]
+    id_numbers: list[str] = []
+    dates_of_birth: list[date] = []
