@@ -5,5 +5,6 @@ description = "Tangos take-home: Sanctions Entity Explorer backend"
 requires-python = ">=3.14"
 dependencies = [
     "fastapi>=0.115",
+    "rapidfuzz>=3.14.5",
     "uvicorn[standard]>=0.30",
 ]
