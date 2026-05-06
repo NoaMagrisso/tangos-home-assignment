@@ -1,0 +1,398 @@
+[
+  {
+    "id": "SDN-10001",
+    "name": "Al-Madar Holdings Ltd",
+    "aliases": ["Al Madar Holdings", "Almadar Holdings", "AMH Group"],
+    "type": "organization",
+    "countries": ["AE", "LB"],
+    "programs": ["SDGT"],
+    "list_date": "2019-04-12",
+    "remarks": "Primary front company; operates through trade-finance subsidiaries.",
+    "relations": [
+      { "target_id": "SDN-10002", "type": "shared_directors", "note": "Two overlapping directors per filings." },
+      { "target_id": "SDN-10031", "type": "name_collision", "note": "Distinct legal entity despite name overlap." }
+    ]
+  },
+  {
+    "id": "SDN-10002",
+    "name": "Al-Mader Trading Company",
+    "aliases": ["Al Mader Co", "AMTC"],
+    "type": "organization",
+    "countries": ["AE"],
+    "programs": ["SDGT"],
+    "list_date": "2020-09-30",
+    "remarks": "Linked to SDN-10001 via shared directors; do not confuse with Al-Madar Holdings.",
+    "relations": [
+      { "target_id": "SDN-10001", "type": "shared_directors", "note": null }
+    ]
+  },
+  {
+    "id": "SDN-10003",
+    "name": "Northbridge Maritime LLC",
+    "aliases": ["Northbridge Maritime", "NBM Shipping"],
+    "type": "organization",
+    "countries": ["CY", "MT"],
+    "programs": ["RUSSIA-EO14024"],
+    "list_date": "2023-02-24",
+    "remarks": "Operator of vessel KAPELLA (IMO 9183746).",
+    "relations": [
+      { "target_id": "SDN-10020", "type": "operates", "note": "Registered operator of MV KAPELLA." }
+    ]
+  },
+  {
+    "id": "SDN-10004",
+    "name": "Vector Cyber Solutions",
+    "aliases": ["VCS Labs", "Vector CS"],
+    "type": "organization",
+    "countries": ["RU"],
+    "programs": ["CYBER2"],
+    "list_date": "2022-04-15",
+    "remarks": "Provides offensive cyber tooling to designated state actors.",
+    "relations": [
+      { "target_id": "SDN-10025", "type": "has_officer", "note": "Senior officer." }
+    ]
+  },
+  {
+    "id": "SDN-10005",
+    "name": "Banco del Sur Internacional",
+    "aliases": ["BSI", "Banco Sur"],
+    "type": "organization",
+    "countries": ["VE"],
+    "programs": ["VENEZUELA-EO13850"],
+    "list_date": "2018-11-01",
+    "remarks": null,
+    "relations": []
+  },
+  {
+    "id": "SDN-10006",
+    "name": "Pacific Dawn Logistics",
+    "aliases": ["Pacific Dawn", "PD Logistics", "PDL"],
+    "type": "organization",
+    "countries": ["KP", "CN"],
+    "programs": ["DPRK3"],
+    "list_date": "2021-07-08",
+    "remarks": "Sanctions-evading logistics broker for designated DPRK shipping.",
+    "relations": [
+      { "target_id": "SDN-10027", "type": "has_officer", "note": "Park Jong-Hyun is registered company officer." },
+      { "target_id": "SDN-10028", "type": "trade_partner", "note": "Recurring counterparty." }
+    ]
+  },
+  {
+    "id": "SDN-10007",
+    "name": "Helios Petrochemical Trading",
+    "aliases": ["Helios Petrochem", "HPT FZE"],
+    "type": "organization",
+    "countries": ["IR", "AE"],
+    "programs": ["IRAN-EO13902"],
+    "list_date": "2020-01-21",
+    "remarks": null,
+    "relations": [
+      { "target_id": "SDN-10026", "type": "trade_partner", "note": "Recurring AE-based broker." }
+    ]
+  },
+  {
+    "id": "SDN-10008",
+    "name": "Saber Defense Industries",
+    "aliases": ["SDI", "Saber Defence Industries"],
+    "type": "organization",
+    "countries": ["SY"],
+    "programs": ["SYRIA"],
+    "list_date": "2017-05-16",
+    "remarks": "Procurement front for Syrian military.",
+    "relations": [
+      { "target_id": "SDN-10022", "type": "has_officer", "note": "Yusuf Al-Khouri serves as procurement officer." }
+    ]
+  },
+  {
+    "id": "SDN-10009",
+    "name": "Greystone Capital Partners",
+    "aliases": ["Greystone Capital", "GCP Holdings"],
+    "type": "organization",
+    "countries": ["KY", "AE"],
+    "programs": ["RUSSIA-EO14024"],
+    "list_date": "2023-06-12",
+    "remarks": "Wealth-management vehicle for designated Russian individuals.",
+    "relations": [
+      { "target_id": "SDN-10011", "type": "financial_advisor_of", "note": "Manages assets on behalf of beneficial owner." }
+    ]
+  },
+  {
+    "id": "SDN-10010",
+    "name": "Volga Special Engineering",
+    "aliases": ["Volga SpetsEng", "VSE-Engineering"],
+    "type": "organization",
+    "countries": ["RU"],
+    "programs": ["RUSSIA-EO14024"],
+    "list_date": "2022-06-28",
+    "remarks": null,
+    "relations": [
+      { "target_id": "SDN-10011", "type": "owned_by", "note": "Beneficial ownership traced to Ivan Volkov." }
+    ]
+  },
+  {
+    "id": "SDN-10011",
+    "name": "Ivan Petrovich Volkov",
+    "aliases": ["I.P. Volkov", "Ivan Volkov"],
+    "type": "person",
+    "countries": ["RU"],
+    "programs": ["RUSSIA-EO14024"],
+    "list_date": "2022-03-15",
+    "remarks": "Beneficial owner of SDN-10010.",
+    "relations": [
+      { "target_id": "SDN-10010", "type": "beneficial_owner_of", "note": null },
+      { "target_id": "SDN-10012", "type": "sibling", "note": "Brother." },
+      { "target_id": "SDN-10009", "type": "client_of", "note": "Wealth-management client." }
+    ]
+  },
+  {
+    "id": "SDN-10012",
+    "name": "Igor Petrovich Volkov",
+    "aliases": ["I. P. Volkov", "Igor Volkov"],
+    "type": "person",
+    "countries": ["RU"],
+    "programs": ["RUSSIA-EO14024"],
+    "list_date": "2022-03-15",
+    "remarks": "Brother of SDN-10011; do not conflate.",
+    "relations": [
+      { "target_id": "SDN-10011", "type": "sibling", "note": "Brother." }
+    ]
+  },
+  {
+    "id": "SDN-10013",
+    "name": "Ana Maria Restrepo Cardenas",
+    "aliases": ["A.M. Restrepo", "Ana Restrepo"],
+    "type": "person",
+    "countries": ["CO"],
+    "programs": ["NARCOTICS"],
+    "list_date": "2015-08-19",
+    "remarks": null,
+    "relations": []
+  },
+  {
+    "id": "SDN-10014",
+    "name": "Khaled bin Yusuf Al-Rashidi",
+    "aliases": ["Khaled Al Rashidi", "K. Y. Al-Rashidi", "Khalid al-Rashidi"],
+    "type": "person",
+    "countries": ["SA", "JO"],
+    "programs": ["SDGT"],
+    "list_date": "2014-02-03",
+    "remarks": "Aliases include common transliteration variants (Khalid / Khaled).",
+    "relations": []
+  },
+  {
+    "id": "SDN-10015",
+    "name": "Mei-Lin Zhao",
+    "aliases": ["Zhao Mei Lin", "M. Zhao"],
+    "type": "person",
+    "countries": ["CN", "HK"],
+    "programs": ["CYBER2"],
+    "list_date": "2021-11-09",
+    "remarks": null,
+    "relations": []
+  },
+  {
+    "id": "SDN-10016",
+    "name": "Cobalt Horizon Investments",
+    "aliases": ["Cobalt Horizon", "CHI Capital"],
+    "type": "organization",
+    "countries": ["CY"],
+    "programs": ["RUSSIA-EO14024"],
+    "list_date": "2024-02-23",
+    "remarks": null,
+    "relations": []
+  },
+  {
+    "id": "SDN-10017",
+    "name": "Sierra Andes Mineracao",
+    "aliases": ["Sierra Andes Mining", "SAM Group"],
+    "type": "organization",
+    "countries": ["VE", "PA"],
+    "programs": ["VENEZUELA-EO13850"],
+    "list_date": "2019-03-08",
+    "remarks": "Operates through Panamanian subsidiary.",
+    "relations": []
+  },
+  {
+    "id": "SDN-10018",
+    "name": "Phoenix Aero Components",
+    "aliases": ["Phoenix Aero", "PAC LLC"],
+    "type": "organization",
+    "countries": ["IR"],
+    "programs": ["IRAN-EO13382"],
+    "list_date": "2018-10-02",
+    "remarks": "Procures dual-use UAV components.",
+    "relations": [
+      { "target_id": "SDN-10030", "type": "supplies_components_to", "note": "Cross-sourced UAV subassemblies." }
+    ]
+  },
+  {
+    "id": "SDN-10019",
+    "name": "Black Sea Marine Services",
+    "aliases": ["Black Sea Marine", "BSMS"],
+    "type": "organization",
+    "countries": ["RU", "TR"],
+    "programs": ["RUSSIA-EO14024"],
+    "list_date": "2023-12-12",
+    "remarks": "Ship-to-ship oil transfers off the Bosphorus.",
+    "relations": []
+  },
+  {
+    "id": "SDN-10020",
+    "name": "MV KAPELLA",
+    "aliases": ["KAPELLA", "ex-LIRA"],
+    "type": "vessel",
+    "countries": ["LR"],
+    "programs": ["RUSSIA-EO14024"],
+    "list_date": "2023-02-24",
+    "remarks": "IMO 9183746; flag: Liberia; operator SDN-10003.",
+    "relations": [
+      { "target_id": "SDN-10003", "type": "operated_by", "note": null }
+    ]
+  },
+  {
+    "id": "SDN-10021",
+    "name": "Crimson Trust Foundation",
+    "aliases": ["Crimson Trust", "CTF International"],
+    "type": "organization",
+    "countries": ["TR", "QA"],
+    "programs": ["SDGT"],
+    "list_date": "2016-12-01",
+    "remarks": "Charitable cover for terrorism financing.",
+    "relations": []
+  },
+  {
+    "id": "SDN-10022",
+    "name": "Yusuf Hamdan Al-Khouri",
+    "aliases": ["Y. Al-Khouri", "Yusuf Khouri", "Yousef Al Khouri"],
+    "type": "person",
+    "countries": ["LB", "SY"],
+    "programs": ["SYRIA"],
+    "list_date": "2017-09-14",
+    "remarks": null,
+    "relations": [
+      { "target_id": "SDN-10008", "type": "officer_of", "note": "Procurement officer." }
+    ]
+  },
+  {
+    "id": "SDN-10023",
+    "name": "Tigris River Industries",
+    "aliases": ["Tigris Industries", "TRI Holdings"],
+    "type": "organization",
+    "countries": ["IQ", "IR"],
+    "programs": ["IRAQ"],
+    "list_date": "2015-05-22",
+    "remarks": null,
+    "relations": []
+  },
+  {
+    "id": "SDN-10024",
+    "name": "Polar Crown Shipping",
+    "aliases": ["Polar Crown", "PCS Maritime"],
+    "type": "organization",
+    "countries": ["MH", "RU"],
+    "programs": ["RUSSIA-EO14024"],
+    "list_date": "2024-04-30",
+    "remarks": null,
+    "relations": []
+  },
+  {
+    "id": "SDN-10025",
+    "name": "Dmitri Andreyevich Sokolov",
+    "aliases": ["D. A. Sokolov", "Dmitry Sokolov"],
+    "type": "person",
+    "countries": ["RU"],
+    "programs": ["RUSSIA-EO14024", "CYBER2"],
+    "list_date": "2022-04-15",
+    "remarks": "Senior officer at SDN-10004.",
+    "relations": [
+      { "target_id": "SDN-10004", "type": "officer_of", "note": "Senior officer." }
+    ]
+  },
+  {
+    "id": "SDN-10026",
+    "name": "Atlas Trade Brokers FZE",
+    "aliases": ["Atlas Trade Brokers", "ATB FZE"],
+    "type": "organization",
+    "countries": ["AE"],
+    "programs": ["IRAN-EO13902"],
+    "list_date": "2021-03-25",
+    "remarks": null,
+    "relations": [
+      { "target_id": "SDN-10007", "type": "trade_partner", "note": null }
+    ]
+  },
+  {
+    "id": "SDN-10027",
+    "name": "Park Jong-Hyun",
+    "aliases": ["Park Jong Hyun", "J.H. Park"],
+    "type": "person",
+    "countries": ["KP"],
+    "programs": ["DPRK3"],
+    "list_date": "2020-08-26",
+    "remarks": null,
+    "relations": [
+      { "target_id": "SDN-10006", "type": "officer_of", "note": null }
+    ]
+  },
+  {
+    "id": "SDN-10028",
+    "name": "Silverline Logistics International",
+    "aliases": ["Silverline Logistics", "SLI Global"],
+    "type": "organization",
+    "countries": ["SG", "HK"],
+    "programs": ["DPRK3"],
+    "list_date": "2022-10-11",
+    "remarks": null,
+    "relations": [
+      { "target_id": "SDN-10006", "type": "trade_partner", "note": "Recurring counterparty." }
+    ]
+  },
+  {
+    "id": "SDN-10029",
+    "name": "Rafael Eduardo Mendoza Silva",
+    "aliases": ["R.E. Mendoza", "Rafael Mendoza"],
+    "type": "person",
+    "countries": ["VE"],
+    "programs": ["VENEZUELA-EO13850"],
+    "list_date": "2019-09-17",
+    "remarks": null,
+    "relations": []
+  },
+  {
+    "id": "SDN-10030",
+    "name": "Orion Procurement Services",
+    "aliases": ["Orion Procurement", "OPS Trading"],
+    "type": "organization",
+    "countries": ["IR", "OM"],
+    "programs": ["IRAN-EO13382"],
+    "list_date": "2020-06-04",
+    "remarks": "Front for ballistic-missile component procurement.",
+    "relations": [
+      { "target_id": "SDN-10018", "type": "sources_from", "note": null }
+    ]
+  },
+  {
+    "id": "SDN-10031",
+    "name": "Al-Madar Charity",
+    "aliases": ["Al Madar Foundation", "AMC Relief"],
+    "type": "organization",
+    "countries": ["LB"],
+    "programs": ["SDGT"],
+    "list_date": "2020-11-18",
+    "remarks": "Distinct from SDN-10001 despite name overlap.",
+    "relations": [
+      { "target_id": "SDN-10001", "type": "name_collision", "note": null }
+    ]
+  },
+  {
+    "id": "SDN-10032",
+    "name": "Aleksandra Kowalska",
+    "aliases": ["A. Kowalska", "Sasha Kowalska"],
+    "type": "person",
+    "countries": ["BY", "PL"],
+    "programs": ["BELARUS-EO14038"],
+    "list_date": "2022-12-02",
+    "remarks": null,
+    "relations": []
+  }
+]
